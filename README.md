@@ -1,4 +1,9 @@
+# Update Notifier Chrome Extension
+A chrome extension that allows adding/removing games from the watchlist of this bot: https://github.com/InfiniteCanvas/UpdateNotifier.git
+
 # Chrome Extension Template (Svelte + Tailwind)
+Template from:
+https://github.com/taishi55/svelte-chrome-extension-template
 
 ## Get started
 1. run `npm install -g rollup` or `sudo npm install -g rollup` 

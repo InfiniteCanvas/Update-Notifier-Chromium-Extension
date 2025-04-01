@@ -73,9 +73,20 @@ export default [
 			file: "public/build/content.js",
 		},
 		plugins: [
+			svelte({  // Add the Svelte plugin here
+				preprocess: sveltePreprocess({ sourceMap: false }),
+				compilerOptions: {
+					dev: !production,
+				},
+			}),
 			typescript({ sourceMap: false }),
-			resolve(),
+			resolve({
+				browser: true,
+				dedupe: ["svelte"],
+				exportConditions: ["svelte"],
+			}),
 			commonjs(),
+			css({ output: "content.css" }),  // Handle component CSS
 			production && terser(),
 		],
 		watch: {

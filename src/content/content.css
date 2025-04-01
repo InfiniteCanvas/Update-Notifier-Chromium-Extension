@@ -1,0 +1,95 @@
+/* Toast Container */
+.toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Toast Notification */
+.toast {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 4px;
+    max-width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+.toast-success {
+    background-color: #4CAF50;
+}
+
+.toast-error {
+    background-color: #f44336;
+}
+
+.toast-warning {
+    background-color: #ff9800;
+}
+
+.toast-info {
+    background-color: #2196F3;
+}
+
+.toast-icon {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Watchlist Controls */
+.watchlist-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.game-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #4b80bd;
+    color: white;
+}
+
+.game-button:hover {
+    background-color: #3a6491;
+}
+
+.game-button.remove {
+    background-color: #d9534f;
+}
+
+.game-button.remove:hover {
+    background-color: #c9302c;
+}
+
+.game-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.user-hash-input {
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+    width: 120px;
+}
+
+.discord-notify-label {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.discord-notify-checkbox {
+    margin-right: 4px;
+}
