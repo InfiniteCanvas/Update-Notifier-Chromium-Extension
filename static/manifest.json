@@ -36,6 +36,12 @@
     "https://f95zone.to/*",
     "https://bot.infinitecanvas.io/*"
   ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "f95zone-watchlist@infinitecanvas.io",
+      "strict_min_version": "109.0"
+    }
+  },
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
